@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://setetres.st/share.png'
+          content: 'https://setetres.st/share-v15.png'
         },
         {
           hid: 'og:url', property: 'og:url', content: 'https://setetres.st'
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://setetres.st/share.png'
+          content: 'https://setetres.st/share-v15.png'
         },
       ],
       script: [
