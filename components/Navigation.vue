@@ -19,11 +19,14 @@
     </div>
     <div class="space-y-12">
       <div>
-        <HeadingSans>&</HeadingSans>
+        <HeadingSans>—</HeadingSans>
         <ul role="list" class="mt-6 space-y-3">
           <li>
             <NavigationLink to="/archive-two">
               Archive Two
+              <Tag class="ml-2">
+                New
+              </Tag>
             </NavigationLink>
           </li>
           <li>
@@ -36,7 +39,7 @@
     </div>
     <div class="space-y-12">
       <div>
-        <HeadingSans>&</HeadingSans>
+        <HeadingSans>—</HeadingSans>
         <ul role="list" class="mt-6 space-y-3">
           <li>
             <NavigationLink to="/milico">
