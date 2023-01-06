@@ -77,6 +77,7 @@
           </li>
           <li>
             <NavigationLink
+              color="hover:text-amber-500"
               to="/moqueca"
               id="moqueca"
             >
@@ -91,7 +92,7 @@
         <HeadingSans>
           Extras
         </HeadingSans>
-        <ul role="list" class="mt-6 space-y-3">
+        <ul role="list" class="mt-6 space-y-3">\inkstarter
           <li>
             <NavigationLink
               color="hover:text-amber-500"
