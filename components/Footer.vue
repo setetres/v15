@@ -1,9 +1,13 @@
 <template>
   <footer aria-labelledby="footer-heading" class="flex flex-col flex-1">
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <h2 id="footer-heading" class="sr-only">
+      Footer
+    </h2>
     <div class="flex md:items-center justify-between mt-6 pt-6 md:mt-12 md:pt-12 border-t border-zinc-700">
       <div class="flex items-center space-x-2">
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-setetres"
           label="Sete Três"
           url="https://setetr.es"
         >
@@ -17,6 +21,8 @@
       </div>
       <div class="flex items-center justify-start sm:justify-end space-x-2">
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-facebook"
           label="Facebook"
           url="https://facebook.com/setetres"
         >
@@ -25,6 +31,8 @@
           </svg>
         </FooterLink>
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-instagram"
           label="Instagram"
           url="https://instagram.com/setetres"
         >
@@ -33,6 +41,8 @@
           </svg>
         </FooterLink>
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-github"
           label="GitHub"
           url="https://github.com/setetres"
         >
@@ -41,6 +51,8 @@
           </svg>
         </FooterLink>
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-linkedin"
           label="LinkedIn"
           url="https://linkedin.com/setetres"
         >
@@ -49,6 +61,8 @@
           </svg>
         </FooterLink>
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-twitter"
           label="Twitter"
           url="https://twitter.com/setetres"
         >
@@ -57,6 +71,8 @@
           </svg>
         </FooterLink>
         <FooterLink
+          color="hover:text-amber-500"
+          id="footer-youtube"
           label="YouTube"
           url="https://youtube.com/setetres"
         >

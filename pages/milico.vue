@@ -1,5 +1,9 @@
 <template>
-  <Bar title="Milico" />
+  <Bar
+    id="back"
+    title="Milico"
+    color="hover:text-amber-500"
+  />
   <CardImage class="col-span-2">
     <img src="~assets/images/milico.png" width="2560" height="1440" alt="Milico Screenshot" />
   </CardImage>
@@ -14,23 +18,42 @@
       HTML
     </Detail>
     <Detail name="Year">
-      <Tag>
+      <Tag color="bg-amber-500">
         2018
       </Tag>
     </Detail>
   </CardDetail>
-  <CardExternal
+  <CardMain
+    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    color="group-hover:text-amber-500"
+    description="github.com/setetres/milico"
+    external="true"
+    id="github-milico"
     label="Source Code"
     title="View on GitHub"
-    description="github.com/setetres/milico"
-    url="github.com/setetres/milico"
-    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    url="https://github.com/setetres/milico"
   />
-  <CardExternal
+  <CardMain
+    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    color="group-hover:text-amber-500"
+    description="milico.setetres.st"
+    external="true"
+    id="live-milico"
     label="Live"
     title="View Project"
-    description="milico.setetres.st"
-    url="milico.setetres.st"
-    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    url="https://milico.setetres.st"
   />
 </template>
+<script>
+  export default {
+    mounted() {
+      this.$nextTick(() => {
+      })
+    },
+    beforeRouteLeave(to, from, next) {
+      setTimeout(function() {
+        next()
+      }, 173)
+    }
+  }
+</script>

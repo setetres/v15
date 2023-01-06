@@ -1,5 +1,9 @@
 <template>
-  <Bar title="Moqueca" />
+  <Bar
+    id="back"
+    title="Moqueca"
+    color="hover:text-amber-500"
+  />
   <CardImage class="col-span-2">
     <img src="~assets/images/moqueca.png" width="2560" height="1440" alt="MOQUECA Screenshot" />
   </CardImage>
@@ -14,23 +18,42 @@
       HTML
     </Detail>
     <Detail name="Year">
-      <Tag>
+      <Tag color="bg-amber-500">
         2020
       </Tag>
     </Detail>
   </CardDetail>
-  <CardExternal
+  <CardMain
+    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    color="group-hover:text-amber-500"
+    description="github.com/setetres/moqueca"
+    external="true"
+    id="github-moqueca"
     label="Source Code"
     title="View on GitHub"
-    description="github.com/setetres/moqueca"
-    url="github.com/setetres/moqueca"
-    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    url="https://github.com/setetres/moqueca"
   />
-  <CardExternal
+  <CardMain
+    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    color="group-hover:text-amber-500"
+    description="moqueca.setetres.st"
+    external="true"
+    id="live-moqueca"
     label="Live"
     title="View Project"
-    description="moqueca.setetres.st"
-    url="moqueca.setetres.st"
-    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    url="https://moqueca.setetres.st"
   />
 </template>
+<script>
+  export default {
+    mounted() {
+      this.$nextTick(() => {
+      })
+    },
+    beforeRouteLeave(to, from, next) {
+      setTimeout(function() {
+        next()
+      }, 173)
+    }
+  }
+</script>

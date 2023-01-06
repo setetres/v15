@@ -1,5 +1,9 @@
 <template>
-  <Bar title="InkStarter" />
+  <Bar
+    id="back"
+    title="InkStarter"
+    color="hover:text-amber-500"
+  />
   <CardImage class="col-span-2">
     <img src="~assets/images/inkstarter.png" width="2560" height="1440" alt="InkStarter Screenshot" />
   </CardImage>
@@ -14,23 +18,42 @@
       Vue / NuxtJS
     </Detail>
     <Detail name="Year">
-      <Tag>
+      <Tag color="bg-amber-500">
         2014
       </Tag>
     </Detail>
   </CardDetail>
-  <CardExternal
+  <CardMain
+    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    color="group-hover:text-amber-500"
+    description="github.com/setetres/inkstarter"
+    external="true"
+    id="github-inkstarter"
     label="Source Code"
     title="View on GitHub"
-    description="github.com/setetres/inkstarter"
-    url="github.com/setetres/inkstarter"
-    class="rounded-b-none sm:rounded-bl-lg sm:rounded-br-none"
+    url="https://github.com/setetres/inkstarter"
   />
-  <CardExternal
+  <CardMain
+    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    color="group-hover:text-amber-500"
+    description="inkstarter.setetres.st"
+    external="true"
+    id="live-inkstarter"
     label="Live"
     title="View Project"
-    description="inkstarter.setetres.st"
-    url="inkstarter.setetres.st"
-    class="rounded-b-lg sm:rounded-bl-none sm:rounded-br-lg pattern"
+    url="https://inkstarter.setetres.st"
   />
 </template>
+<script>
+  export default {
+    mounted() {
+      this.$nextTick(() => {
+      })
+    },
+    beforeRouteLeave(to, from, next) {
+      setTimeout(function() {
+        next()
+      }, 173)
+    }
+  }
+</script>
