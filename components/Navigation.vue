@@ -92,7 +92,7 @@
         <HeadingSans>
           Extras
         </HeadingSans>
-        <ul role="list" class="mt-6 space-y-3">\inkstarter
+        <ul role="list" class="mt-6 space-y-3">
           <li>
             <NavigationLink
               color="hover:text-amber-500"
