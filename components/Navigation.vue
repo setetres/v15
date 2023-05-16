@@ -40,12 +40,6 @@
               to="/archive-two"
             >
               Archive Two
-              <Tag
-                class="ml-2"
-                color="bg-amber-500"
-              >
-                New
-              </Tag>
             </NavigationLink>
           </li>
           <li>
