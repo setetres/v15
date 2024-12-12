@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         {
           hid: 'description',
           name: 'description',
-          content: '15 years'
+          content: 'v15.0 of my website.'
         },
         {
           hid: 'og:type', property: 'og:type', content: 'website'
@@ -27,15 +27,15 @@ export default defineNuxtConfig({
         {
           hid: 'og:description',
           property: 'og:description',
-          content: '15 years'
+          content: 'v15.0 of my website.'
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: 'https://setetres.st/share.png'
+          content: 'https://v15.setetres.st/share-v15.png'
         },
         {
-          hid: 'og:url', property: 'og:url', content: 'https://setetres.st'
+          hid: 'og:url', property: 'og:url', content: 'https://v15.setetres.st'
         },
         {
           hid: 'twitter:card',
@@ -48,18 +48,18 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: '15 years'
+          content: 'v15.0 of my website.'
         },
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: 'https://setetres.st/share.png'
+          content: 'https://v15.setetres.st/share-v15.png'
         },
       ],
       script: [
       ],
       link: [
-        { rel: 'icon', href: '/favicon.svg' }
+        { rel: 'icon', href: '/favicon.png' }
       ],
       style: [
       ],
@@ -73,6 +73,12 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/application.scss'
+  ],
+  plugins: [
+    {
+      src: '~/plugins/dp.js',
+      mode: 'client',
+    },
   ],
   postcss: {
     plugins: {
